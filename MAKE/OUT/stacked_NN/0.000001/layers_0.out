@@ -1,0 +1,79 @@
+Args:
+	model: stacked_NN
+	optimizer: SGD
+	optimizer_args: {}
+	hyperoptimizer: RMSProp
+	hyperoptimizer_args: {}
+	num_hyperoptimizers: 0
+	loss_fn: CrossEntropyLoss
+	dataset: MNIST
+	alpha: 1e-06
+	kappa: None
+	num_epochs: 20
+	batch_size: 1024
+	baseline: False
+	device: cuda
+	Alpha Values: {}
+	Using 4 GPUs
+
+***Beginning Training***
+	Initial Train Loss: 2.2928077096303303
+	Epoch[1/20]: Training Loss = 2.29280
+	Epoch[2/20]: Training Loss = 2.29279
+	Epoch[3/20]: Training Loss = 2.29278
+	Epoch[4/20]: Training Loss = 2.29277
+	Epoch[5/20]: Training Loss = 2.29277
+	Epoch[6/20]: Training Loss = 2.29276
+	Epoch[7/20]: Training Loss = 2.29275
+	Epoch[8/20]: Training Loss = 2.29274
+	Epoch[9/20]: Training Loss = 2.29273
+	Epoch[10/20]: Training Loss = 2.29272
+	Epoch[11/20]: Training Loss = 2.29271
+	Epoch[12/20]: Training Loss = 2.29270
+	Epoch[13/20]: Training Loss = 2.29269
+	Epoch[14/20]: Training Loss = 2.29268
+	Epoch[15/20]: Training Loss = 2.29267
+	Epoch[16/20]: Training Loss = 2.29266
+	Epoch[17/20]: Training Loss = 2.29265
+	Epoch[18/20]: Training Loss = 2.29264
+	Epoch[19/20]: Training Loss = 2.29263
+	Epoch[20/20]: Training Loss = 2.29262
+***Training Complete***
+
+Final Optimizer Parameters
+	alpha : 9.999999974752427e-07
+	mu : 0.0
+
+***Testing Results***
+==============================
+Test Accuracy = 13.250 %
+Test Error = 86.750 %
+==============================
+
+Plotted Lists:
+Epochs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+alpha: [9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07, 9.999999974752427e-07]
+mu: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Loss: [2.2928077096303303, 2.292803032430013, 2.2927935368855796, 2.29278402633667, 2.292774593861898, 2.292765076828003, 2.2927556021372477, 2.29274608446757, 2.2927366325378418, 2.292727169672648, 2.2927176687876383, 2.2927081988016766, 2.2926986354827883, 2.2926891693115232, 2.292679716873169, 2.2926701934814453, 2.2926607453664145, 2.2926512376149497, 2.2926417430877684, 2.2926322659810383, 2.2926227403004966]
+Traceback (most recent call last):
+  File "/scratch/bes1g19/DeepLearning/CW/taskdef.py", line 200, in <module>
+    experiments.plot(args.alpha, args.kappa, args.optimizer, args.optimizer_args, args.hyperoptimizer, args.hyperoptimizer_args, args.model, f"{args.alpha}/{args.num_hyperoptimizers}")
+  File "/mainfs/scratch/bes1g19/DeepLearning/CW/packages/utils/train_val.py", line 279, in plot
+    plt.savefig(f'../plots/{src}/{path}.png')
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/pyplot.py", line 977, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/figure.py", line 3058, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 2319, in print_figure
+    result = print_method(
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 1648, in wrapper
+    return func(*args, **kwargs)
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 415, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/backends/backend_agg.py", line 541, in print_png
+    mpl.image.imsave(
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/matplotlib/image.py", line 1675, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/lyceum/bes1g19/.conda/envs/py3venv/lib/python3.10/site-packages/PIL/Image.py", line 2317, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: '../plots/stacked_NN/1e-06/0.png'

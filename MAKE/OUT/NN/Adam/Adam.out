@@ -1,0 +1,68 @@
+Args:
+	model: NN
+	optimizer: Adam
+	optimizer_args: {'beta1': 0.9, 'beta2': 0.99}
+	hyperoptimizer: Adam
+	hyperoptimizer_args: {'beta1': 0.9, 'beta2': 0.99}
+	num_hyperoptimizers: 0
+	loss_fn: CrossEntropyLoss
+	dataset: MNIST
+	alpha: 0.001
+	kappa: 0.001
+	num_epochs: 30
+	batch_size: 256
+	baseline: False
+	device: cuda
+	Using 4 GPUs
+
+***Beginning Training***
+	Initial Train Loss: 2.3046654697418214
+	Epoch[1/30]: Training Loss = nan
+	Epoch[2/30]: Training Loss = nan
+	Epoch[3/30]: Training Loss = nan
+	Epoch[4/30]: Training Loss = nan
+	Epoch[5/30]: Training Loss = nan
+	Epoch[6/30]: Training Loss = nan
+	Epoch[7/30]: Training Loss = nan
+	Epoch[8/30]: Training Loss = nan
+	Epoch[9/30]: Training Loss = nan
+	Epoch[10/30]: Training Loss = nan
+	Epoch[11/30]: Training Loss = nan
+	Epoch[12/30]: Training Loss = nan
+	Epoch[13/30]: Training Loss = nan
+	Epoch[14/30]: Training Loss = nan
+	Epoch[15/30]: Training Loss = nan
+	Epoch[16/30]: Training Loss = nan
+	Epoch[17/30]: Training Loss = nan
+	Epoch[18/30]: Training Loss = nan
+	Epoch[19/30]: Training Loss = nan
+	Epoch[20/30]: Training Loss = nan
+	Epoch[21/30]: Training Loss = nan
+	Epoch[22/30]: Training Loss = nan
+	Epoch[23/30]: Training Loss = nan
+	Epoch[24/30]: Training Loss = nan
+	Epoch[25/30]: Training Loss = nan
+	Epoch[26/30]: Training Loss = nan
+	Epoch[27/30]: Training Loss = nan
+	Epoch[28/30]: Training Loss = nan
+	Epoch[29/30]: Training Loss = nan
+	Epoch[30/30]: Training Loss = nan
+***Training Complete***
+
+Final Optimizer Parameters
+	alpha : nan
+	beta1 : nan
+	beta2 : nan
+
+***Testing Results***
+==============================
+Test Accuracy = 9.800 %
+Test Error = 90.200 %
+==============================
+
+Plotted Lists:
+Epochs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+alpha: [0.0010000000474974513, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]
+beta1: [0.8999999761581421, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]
+beta2: [0.9900000095367432, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]
+Loss: [2.3046654697418214, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]
